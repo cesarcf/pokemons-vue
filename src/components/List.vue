@@ -37,4 +37,10 @@ export default {
 	  grid-template-columns: repeat(auto-fill, 180px);
     justify-content: center;
   }
+  
+  @media screen and (min-width: 768px) {
+    section {
+      grid-template-columns: repeat(4, 180px);
+    }
+  }
 </style>
