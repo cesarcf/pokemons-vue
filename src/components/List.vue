@@ -1,10 +1,10 @@
 <template>
   <section>
     <ItemList 
-      v-for='(pokemon, key, index) in items' 
+      v-for='({url, name}, index) in items' 
       :key='index' 
-      :url='pokemon.url' 
-      :name='pokemon.name' 
+      :url='url' 
+      :name='name' 
       :background='_generateBackgroundColor()'
     >
     </ItemList>
