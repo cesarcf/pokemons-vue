@@ -1,8 +1,13 @@
 <template>
   <section>
-    <article v-for='(pokemon, key, index) in items' :key='index'>
-      <ItemList :url='pokemon.url' :name='pokemon.name' :background='_generateBackgroundColor()'></ItemList>
-    </article>
+    <ItemList 
+      v-for='(pokemon, key, index) in items' 
+      :key='index' 
+      :url='pokemon.url' 
+      :name='pokemon.name' 
+      :background='_generateBackgroundColor()'
+    >
+    </ItemList>
   </section>
 </template>
 
